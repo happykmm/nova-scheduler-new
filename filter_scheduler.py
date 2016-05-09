@@ -78,10 +78,10 @@ class FilterScheduler(driver.Scheduler):
                               filter_properties, legacy_bdm_in_spec):
         
         #import pydevd
-	    print "hello world"
+        print "hello world"
         pydevd.settrace('192.168.116.1', port=21000, stdoutToServer=True, stderrToServer=True)
-	
-    """Provisions instances that needs to be scheduled
+
+        """Provisions instances that needs to be scheduled
 
         Applies filters and weighters on request properties to get a list of
         compute hosts and calls them to spawn instance(s).
