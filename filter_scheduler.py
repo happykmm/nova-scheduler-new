@@ -147,7 +147,10 @@ class FilterScheduler(driver.Scheduler):
         self.notifier.info(context, 'scheduler.run_instance.end', payload)
 
     def select_destinations(self, context, request_spec, filter_properties):
+
         print "############## filter_scheduler.py:select_destinations #################"
+        pydevd.settrace('192.168.116.1', port=21000, stdoutToServer=True, stderrToServer=True)
+
         """Selects a filtered set of hosts and nodes."""
         self.notifier.info(context, 'scheduler.select_destinations.start',
                            dict(request_spec=request_spec))
