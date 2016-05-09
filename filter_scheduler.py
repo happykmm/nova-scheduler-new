@@ -36,7 +36,7 @@ from nova.scheduler import utils as scheduler_utils
 
 import pydevd
 #pydevd.settrace('192.168.116.1', port=21000, stdoutToServer=True, stderrToServer=True)
-print "hello world"
+print "############## filter_scheduler.py #################"
 
 
 CONF = cfg.CONF
