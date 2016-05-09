@@ -68,6 +68,7 @@ class FilterScheduler(driver.Scheduler):
             'ServerGroupAffinityFilter')
         self._supports_anti_affinity = scheduler_utils.validate_filter(
             'ServerGroupAntiAffinityFilter')
+        print "############## filter_scheduler.py:__init__ #################"
 
     # NOTE(alaski): Remove this method when the scheduler rpc interface is
     # bumped to 4.x as it is no longer used.
@@ -146,6 +147,7 @@ class FilterScheduler(driver.Scheduler):
         self.notifier.info(context, 'scheduler.run_instance.end', payload)
 
     def select_destinations(self, context, request_spec, filter_properties):
+        print "############## filter_scheduler.py:select_destinations #################"
         """Selects a filtered set of hosts and nodes."""
         self.notifier.info(context, 'scheduler.select_destinations.start',
                            dict(request_spec=request_spec))
@@ -169,6 +171,7 @@ class FilterScheduler(driver.Scheduler):
             filter_properties, requested_networks, injected_files,
             admin_password, is_first_time, instance_uuid=None,
             legacy_bdm_in_spec=True):
+        print "############## filter_scheduler.py:_provision_resource #################"
         """Create the requested resource in this Zone."""
         # NOTE(vish): add our current instance back into the request spec
         request_spec['instance_uuids'] = [instance_uuid]
@@ -242,6 +245,7 @@ class FilterScheduler(driver.Scheduler):
         return update_group_hosts
 
     def _schedule(self, context, request_spec, filter_properties):
+        print "############## filter_scheduler.py:_schedule #################"
         """Returns a list of hosts that meet the required specs,
         ordered by their fitness.
         """
