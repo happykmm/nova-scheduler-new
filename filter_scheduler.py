@@ -35,7 +35,6 @@ from nova.scheduler import utils as scheduler_utils
 
 
 import pydevd
-#pydevd.settrace('192.168.116.1', port=21000, stdoutToServer=True, stderrToServer=True)
 print "############## filter_scheduler.py #################"
 
 
@@ -76,9 +75,8 @@ class FilterScheduler(driver.Scheduler):
                               admin_password, injected_files,
                               requested_networks, is_first_time,
                               filter_properties, legacy_bdm_in_spec):
-        
-        #import pydevd
-        print "hello world"
+
+        print "############## filter_scheduler.py:scheduler_run_instance #################"
         pydevd.settrace('192.168.116.1', port=21000, stdoutToServer=True, stderrToServer=True)
 
         """Provisions instances that needs to be scheduled
