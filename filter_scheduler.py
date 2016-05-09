@@ -205,10 +205,12 @@ class FilterScheduler(driver.Scheduler):
                     legacy_bdm_in_spec=legacy_bdm_in_spec)
 
     def _get_configuration_options(self):
+        print "############## filter_scheduler.py:_get_configuration_options #################"
         """Fetch options dictionary. Broken out for testing."""
         return self.options.get_configuration()
 
     def populate_filter_properties(self, request_spec, filter_properties):
+        print "############## filter_scheduler.py:populate_filter_properties #################"
         """Stuff things into filter_properties.  Can be overridden in a
         subclass to add more data.
         """
@@ -219,6 +221,7 @@ class FilterScheduler(driver.Scheduler):
         filter_properties['os_type'] = os_type
 
     def _setup_instance_group(self, context, filter_properties):
+        print "############## filter_scheduler.py:_setup_instance_group #################"
         update_group_hosts = False
         scheduler_hints = filter_properties.get('scheduler_hints') or {}
         group_hint = scheduler_hints.get('group', None)
@@ -325,5 +328,6 @@ class FilterScheduler(driver.Scheduler):
         return selected_hosts
 
     def _get_all_host_states(self, context):
+        print "############## filter_scheduler._get_all_host_states #################"
         """Template method, so a subclass can implement caching."""
         return self.host_manager.get_all_host_states(context)
