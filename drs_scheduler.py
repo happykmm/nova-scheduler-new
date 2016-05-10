@@ -33,10 +33,8 @@ class DrsScheduler(driver.Scheduler):
         """Picks a host that is up at random."""
 
         elevated = context.elevated()
-        hosts_array = []
-        hosts_iterator = self.host_manager.get_all_host_states(elevated)
-        for host_i in hosts_iterator:
-            hosts_array.append(host_i)
+        hosts_array = list(self.host_manager.get_all_host_states(elevated))
+
 
         hosts = self.hosts_up(elevated, topic)
         if not hosts:
