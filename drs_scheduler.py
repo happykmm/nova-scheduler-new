@@ -47,6 +47,8 @@ class DrsScheduler(driver.Scheduler):
 
     def select_destinations(self, context, request_spec, filter_properties):
         """Selects random destinations."""
+        import pydevd
+        pydevd.settrace('192.168.116.1', port=21000, stdoutToServer=True, stderrToServer=True)
         num_instances = request_spec['num_instances']
         # NOTE(timello): Returns a list of dicts with 'host', 'nodename' and
         # 'limits' as keys for compatibility with filter_scheduler.
