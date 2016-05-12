@@ -9,4 +9,4 @@ tree = ET.parse(root_path + '/test30/xml2.xml')
 
 print tree
 
-tree.write('/test31/xml2.xml')
+tree.write(root_path + '/test31/xml2.xml')
