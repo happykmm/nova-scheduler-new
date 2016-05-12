@@ -1,23 +1,22 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <DATA VERSION="0.3">
-  <PM STAT="1" IP="10.10.10.10" ID="pm1">
-    <METRIC RESERVED="0.00" TOTAL="0.00" USED="0.00" NAME="cpu"/>
-    <METRIC RESERVED="0.00" TOTAL="0.00" USED="0.00" NAME="mem"/>
-    <METRIC RESERVED="0.00" TOTAL="0.00" USED="0.00" NAME="diskio"/>
-    <METRIC RESERVED="0.00" TOTAL="0.00" USED="0.00" NAME="fpga"/>
-    <METRIC RESERVED="0.00" TOTAL="0.00" USED="0.00" NAME="eth0"/>
-    <METRIC RESERVED="0.00" TOTAL="0.00" USED="0.00" NAME="eth1"/>
-    <METRIC RESERVED="0.00" TOTAL="0.00" USED="0.00" NAME="eth2"/>
-    <METRIC RESERVED="0.00" TOTAL="0.00" USED="0.00" NAME="eth3"/>
+  <PM ID="pm1" IP="10.10.10.10" STAT="1">
+    <METRIC NAME="cpu" RESERVED="0.00" TOTAL="0.00" USED="0.00" />
+    <METRIC NAME="mem" RESERVED="0.00" TOTAL="0.00" USED="0.00" />
+    <METRIC NAME="diskio" RESERVED="0.00" TOTAL="0.00" USED="0.00" />
+    <METRIC NAME="fpga" RESERVED="0.00" TOTAL="0.00" USED="0.00" />
+    <METRIC NAME="eth0" RESERVED="0.00" TOTAL="0.00" USED="0.00" />
+    <METRIC NAME="eth1" RESERVED="0.00" TOTAL="0.00" USED="0.00" />
+    <METRIC NAME="eth2" RESERVED="0.00" TOTAL="0.00" USED="0.00" />
+    <METRIC NAME="eth3" RESERVED="0.00" TOTAL="0.00" USED="0.00" />
   </PM>
-  <VM AT="" STAT="0" ID="vm1">
-    <METRIC TOTAL="0" USED="0" NAME="cpu"/>
-    <METRIC TOTAL="0" USED="0" NAME="mem"/>
-    <METRIC TOTAL="0" USED="0" NAME="diskio"/>
-    <METRIC TOTAL="0" USED="0" NAME="fpga"/>
-    <METRIC TOTAL="0" USED="0" NAME="eth0"/>
-    <METRIC TOTAL="0" USED="0" NAME="eth1"/>
-    <METRIC TOTAL="0" USED="0" NAME="eth2"/>
-    <METRIC TOTAL="0" USED="0" NAME="eth3"/>
+  <VM AT="" ID="vm1" STAT="0">
+    <METRIC NAME="cpu" TOTAL="0" USED="0" />
+    <METRIC NAME="mem" TOTAL="0" USED="0" />
+    <METRIC NAME="diskio" TOTAL="0" USED="0" />
+    <METRIC NAME="fpga" TOTAL="0" USED="0" />
+    <METRIC NAME="eth0" TOTAL="0" USED="0" />
+    <METRIC NAME="eth1" TOTAL="0" USED="0" />
+    <METRIC NAME="eth2" TOTAL="0" USED="0" />
+    <METRIC NAME="eth3" TOTAL="0" USED="0" />
   </VM>
 </DATA>
