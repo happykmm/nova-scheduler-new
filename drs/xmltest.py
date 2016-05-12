@@ -12,6 +12,6 @@ print tree
 
 tree.write(input_path + '/test30/xml2.xml')
 
-drs_retcode, drs_output = commands.getstatusoutput("echo '1 30 0' | " + root_path + "/drs03")
+drs_retcode, drs_output = commands.getstatusoutput("cd " + root_path + "; echo '1 30 0' | " + root_path + "/drs03")
 print drs_retcode
 print drs_output
