@@ -10,7 +10,7 @@ tree = ET.parse(input_path + '/test30/xml2.xml')
 print tree
 # fill the xml file here
 
-tree.write(root_path + '/test31/xml2.xml')
+tree.write(input_path + '/test31/xml2.xml')
 
 drs_retcode, drs_output = commands.getstatusoutput("echo '1 31 0' | " + root_path + "/drs03")
 print drs_retcode
