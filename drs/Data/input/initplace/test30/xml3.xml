@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ACTION VERSION="0.1">
-  <PLACE ID="ID_0" TRAGET="Ubuntu" VMID="vm1"/>
+  <PLACE ID="ID_0" TRAGET="pm1" VMID="vm1"/>
 </ACTION>
